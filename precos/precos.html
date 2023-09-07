@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarildo Preços</title>
+    <link rel="stylesheet" href="../style2.css">
+</head>
+<body>
+    <header><!-- titulo -->
+        <picture>
+            <source media="(max-width: 530px)" srcset="../imagens/logoP.png" style="width: auto;">
+            <source media="(max-width: 930px)" srcset="../imagens/logoM.png">
+            <img src="../imagens/logoG.png" alt="logo amarildo">
+        </picture>
+       
+        <div id="botao"> <H2>Preço Médio Orçamento</H1>
+
+                <a href="../index.html"><img src="../imagens/volta.png" id="navfoto" alt="Botão" onclick="mostrarLinks()"></a>
+        </div>  
+    
+    <nav><!--navegador -->
+        <a href="../index.html" id="button" class="menu">Voltar</a>
+    </nav>
+    <section id="sectionpreco">
+        <div>
+           <p>Quantidade de Km</p> 
+           <input type="number" name="txtano" id="txtano" min="0">
+           <p>Destino:<br>
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Baixada Santita</label><br>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Outras Regiões</label>
+           </p>
+           <p>
+            <input type="button" value="Verificar" onclick="verificar()" id="bt">
+           </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o preço médio!
+        </div>
+    </section>
+    <footer id="footerpreco">
+        <p>*Preço pode sofrer variações dependendo das expecificações do serviço</p>
+        <p>CNPJ: 29.051.979/0001-09</p>
+    </footer>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=5513997245567" class="whatsapp_float" target="_blank">
+            <i class="whatsapp-icon">Contato pelo WhatsApp</i>
+        </a>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
